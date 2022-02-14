@@ -8,6 +8,9 @@ class TestCase(unittest.TestCase):
 
     def test_empty_str(self):
         self.try_pwd('', False)
+    
+    def test_valid_pwd(self):
+        self.try_pwd('MyValidPassword123!', True)
 
 
 if __name__ == '__main__':
