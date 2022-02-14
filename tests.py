@@ -24,6 +24,9 @@ class TestCase(unittest.TestCase):
     def test_no_digits_pwd(self):
         self.try_pwd('MyInvalidPassword!', False)
 
+    def test_no_symbol_pwd(self):
+        self.try_pwd('MyInvalidPassword123', False)
+
 
 if __name__ == '__main__':
     unittest.main()
