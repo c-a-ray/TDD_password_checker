@@ -8,4 +8,5 @@ Specifications:
 """
 
 def check_pwd(pwd: str) -> bool:
-    return len(pwd) >= 8
+    pwd_len = len(pwd)
+    return pwd_len >= 8 and pwd_len <= 20
