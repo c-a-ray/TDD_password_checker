@@ -8,4 +8,4 @@ Specifications:
 """
 
 def check_pwd(pwd: str) -> bool:
-    return False
+    return len(pwd) >= 8
