@@ -15,6 +15,9 @@ class TestCase(unittest.TestCase):
     def test_too_long_pwd(self):
         self.try_pwd('MyInvalidPassword123!', False)
 
+    def test_all_uppercase_pwd(self):
+        self.try_pwd('MYINVALIDPWD123!', False)
+
 
 if __name__ == '__main__':
     unittest.main()
