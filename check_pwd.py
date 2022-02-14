@@ -8,5 +8,10 @@ Specifications:
 """
 
 def check_pwd(pwd: str) -> bool:
+    has_lowercase_letter = False
+    for c in pwd:
+        if c.islower():
+            has_lowercase_letter = True
+    
     pwd_len = len(pwd)
-    return pwd_len >= 8 and pwd_len <= 20
+    return pwd_len >= 8 and pwd_len <= 20 and has_lowercase_letter
